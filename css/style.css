@@ -143,15 +143,20 @@ header::before {
   max-width: 1200px;
   min-height: 600px;
   margin: 0 auto;
+  background-color: #ffffff18;
+}
+
+.title-form {
+  padding-top: 1em;
 }
 
 .information-form h2 {
-  width: 80%;
-  background-color: rgba(27, 36, 45, 0.17);
+  width: 60%;
+  background-color: rgba(119, 113, 113, 0.04);
   margin: 1em auto;
   text-align: center;
   font-size: xx-large;
-  padding-top: 1em;
+  padding: 0.5em;
 }
 
 .wrapper-form {
