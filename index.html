@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto a inversión</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-text">
+        <div class="header-text-container">
+          <h1 class="header-title">Una vista a tu próximo proyecto</h1>
+          <div class="header-description">
+            Un área de <span style="font-weight: bold">2030 m2 </span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="slider">
+      <div class="slider-container container">
+        <img src="assets/leftArrow.svg" class="slider-arrow" id="before" />
+        <div class="slider-body slider-body-show" data-id="1">
+          <figure class="imagen">
+            <img src="./assets/satelital.png" alt="satelital" width="100%" />
+          </figure>
+          <div class="slide-container-text">
+            <p class="slider-text">
+              Vias de Acceso por todos sus puntos cardinales
+            </p>
+          </div>
+        </div>
+        <div class="slider-body" data-id="2">
+          <figure class="imagen">
+            <img src="./assets/aero1.png" alt="satelital" width="100%" />
+          </figure>
+          <div class="slide-container-text">
+            <p class="slider-text">
+              Vias de Acceso por todos sus puntos cardinales
+            </p>
+          </div>
+        </div>
+        <div class="slider-body" data-id="3">
+          <figure class="imagen">
+            <img src="./assets/aero2.png" alt="satelital" width="100%" />
+          </figure>
+          <div class="slide-container-text">
+            <p class="slider-text">
+              Vias de Acceso por todos sus puntos cardinales
+            </p>
+          </div>
+        </div>
+        <div class="slider-body" data-id="4">
+          <figure class="imagen">
+            <img src="./assets/satelital.png" alt="satelital" width="100%" />
+          </figure>
+          <div class="slide-container-text">
+            <p class="slider-text">
+              Vias de Acceso por todos sus puntos cardinales
+            </p>
+          </div>
+        </div>
+        <img src="assets/rightArrow.svg" class="slider-arrow" id="after" />
+      </div>
+    </section>
+    <section class="media">
+      <div class="video-content">
+        <iframe
+          width="100%"
+          height="480"
+          src="https://www.youtube.com/embed/hLPNq3yF8Cs"
+          title="Lote Tuna Alta"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+    </section>
+    <section class="information-form">
+      <h2>Mas informacion ...</h2>
+      <div class="wrapper-form">
+        <div class="content-form">
+          <form id="form" action="" class="form">
+            <input type="text" name="name" id="name" placeholder="Nombre" />
+            <input type="email" id="email" name="email" placeholder="Correo" />
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Numero de Contacto"
+            />
+            <textarea
+              name="message"
+              id="message"
+              rows="3"
+              placeholder="Pregutas de interes"
+            ></textarea>
+            <button type="submit" id="button">Enviar mensaje</button>
+          </form>
+        </div>
+        <div class="info">
+          <div class="text-info">
+            <p>
+              Sientase libre de hacer cualquier pregunta sobre el predio,
+              estaremos atentos a responderemos lo mas pronto posible
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/slider.js"></script>
+    <script src="js/form.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      emailjs.init("Zb00T0tS5EXDlD4b-");
+    </script>
+  </body>
+</html>

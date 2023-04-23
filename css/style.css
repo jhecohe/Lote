@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: whitesmoke;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  min-width: 800px;
+  min-height: 600px;
+  position: relative;
+  display: grid;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/vistLote.png");
+  background-size: cover;
+  z-index: -1;
+}
+
+.header-text {
+  max-width: 800px;
+  display: grid;
+  grid-auto-rows: max-content;
+  align-content: end;
+  gap: 1em;
+  padding-left: 3em;
+  padding-bottom: 3em;
+}
+
+.header-text-container {
+  background-color: rgba(37, 38, 39, 0.463);
+  border-radius: 6px;
+  padding: 1em;
+}
+
+.header-title {
+  font-size: 3em;
+}
+
+.header-description {
+  font-size: 2em;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  background-image: url("../assets/background-gruas.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 6em 0px;
+}
+
+.slider {
+  padding: 10px 0;
+}
+
+.slider-container {
+  display: grid;
+  grid-template-columns: 50px 1fr 50px;
+  grid-template-rows: 500px 1fr;
+  grid-area: center;
+  align-items: center;
+  gap: 1em;
+  position: relative;
+}
+
+.slider-body {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  opacity: 0;
+  pointer-events: none;
+  display: grid;
+  align-items: center;
+  transition: opacity 1.5s;
+  background-color: rgba(172, 163, 163, 0.815);
+}
+
+.slider-body-show {
+  opacity: 1;
+  pointer-events: unset;
+}
+
+.slide-container-text {
+  width: 90%;
+  font-size: xx-large;
+  position: absolute;
+  top: 70%;
+  left: 10%;
+}
+.slider-text {
+  display: inline-block;
+  background-color: rgba(81, 79, 79, 0.7);
+  padding: 0.5em;
+}
+
+.slider-arrow {
+  cursor: pointer;
+  width: 90%;
+}
+
+.imagen {
+  width: 94%;
+  height: 92%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.imagen img {
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.media {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: whitesmoke;
+  padding: 3em 0;
+}
+
+.video-content {
+  margin: 2em auto;
+  width: 80%;
+}
+
+.information-form {
+  max-width: 1200px;
+  min-height: 600px;
+  margin: 0 auto;
+}
+
+.information-form h2 {
+  width: 80%;
+  background-color: rgba(27, 36, 45, 0.17);
+  margin: 1em auto;
+  text-align: center;
+  font-size: xx-large;
+  padding-top: 1em;
+}
+
+.wrapper-form {
+  width: 80%;
+  margin: 2em auto;
+  background-color: hsla(0, 1%, 18%, 0.432);
+  display: grid;
+  grid-template-columns: 50% 1fr auto;
+  border-radius: 10px 0px 10px 0px;
+  box-shadow: rgba(248, 247, 247, 0.25) 0px 6px 10px,
+    rgba(246, 244, 244, 0.22) 0px 6px 6px;
+}
+
+.content-form {
+  grid-column: 1/2;
+  padding: 2em;
+  width: 90%;
+}
+
+.content-form form input,
+.content-form form textarea {
+  width: 100%;
+  margin-bottom: 1em;
+  background-color: rgba(0, 0, 0, 0);
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: rgb(225, 225, 234);
+  color: whitesmoke;
+  font-size: larger;
+  padding: 0.5em;
+}
+
+.content-form form textarea {
+  resize: none;
+}
+
+.content-form form button {
+  font-family: Roboto, sans-serif;
+  font-weight: 0;
+  font-size: 14px;
+  color: #d3e0e6;
+  background-color: #959da6;
+  padding: 10px 30px;
+  border: solid #d7dbde 2px;
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+  border-radius: 14px 4px;
+  transition: 1000ms;
+  transform: translateY(0);
+  display: flex;
+  cursor: pointer;
+}
+
+.content-form form button:hover{
+  transition : 1000ms;
+  padding: 10px 50px;
+  transform : translateY(-0px);
+  background-color: #fff;
+  color: #6e7379;
+  border: solid 2px #8c949b;
+  }
+
+.info {
+  grid-column: 2/3;
+  display: grid;
+  width: 80%;
+  place-items: center;
+}
+
+.text-info {
+  font-size: x-large;
+  background-color: rgba(0, 0, 0, 0.448);
+  padding: 1.5em;
+  border-radius: 6px;
+  clip-path: polygon(5% 5%, 100% 0, 94% 95%, 0 99%);
+}
+
+.text-info p {
+  text-align: justify;
+}
